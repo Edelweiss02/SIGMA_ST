@@ -1,26 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@model IEnumerable<SIGMA_ST.Models.Gas>
+@{
+    ViewBag.Title = "Все пользователи";
 }
+<a asp-action="Create">Добавить пользователя</a>
+<table class="table">
+    <tr><td>Имя</td><td>Возраст</td></tr>
+    @foreach (var item in Model)
+    {
+        <tr><td>@item.NameGas</td><td>@item.Price</td></tr>
+    }
+</table>
 
-<div class="text-center">
-    <h1 class="display-4">Рабочая зона</h1>
-</div>
-<form method="post">
-    <label>Логин:</label><br />
-    <input type="text" name="login" /><br /><br />
-    <label>Пароль:</label><br />
-    <input type="text" name="password" /><br /><br />
-    <input type="submit" value="Оформить" />
-
-</form>
-<label>Комментарий:</label>
-<br />
-<textarea name="comment"></textarea>
-<select Length="9" id="countries" multiple="multiple" name="countires">
-    <option>Россия</option>
-    <option>США</option>
-    <option>Китай</option>
-    <option>Индия</option>
-</select>
-<input id="Enable" name="Enable" type="checkbox" value="true" />
-<input name="Enable" type="hidden" value="false" />

@@ -1,37 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using SIGMA_ST.Models;
 
 namespace SIGMA_ST.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private ApplicationContext db;
+        public HomeController(ApplicationContext context)
         {
-            _logger = logger;
+            db = context;
         }
-
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
+        {
+            return View(await db.Gas.ToListAsync());
+        }
+        public IActionResult Create()
         {
             return View();
         }
-
+        [HttpPost]
+        public async Task<IActionResult> Create(Gas gas)
+        {
+            db.Gas.Add(gas);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
         public IActionResult Privacy()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

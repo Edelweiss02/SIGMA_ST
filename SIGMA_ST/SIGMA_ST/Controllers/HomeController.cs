@@ -12,16 +12,18 @@ namespace SIGMA_ST.Controllers
         {
             db = context;
         }
-        public async Task<IActionResult> Index()
-        {
-            return View(await db.Gas.ToListAsync());
-        }
-        public IActionResult Create()
+       
+      // public async Task<IActionResult> Index()
+      // {
+       //     return View(await db.Gas.ToListAsync());
+      //  }
+       
+        public IActionResult Index()
         {
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create(Gas gas)
+        public async Task<IActionResult> Index(Gas gas)
         {
             db.Gas.Add(gas);
             await db.SaveChangesAsync();

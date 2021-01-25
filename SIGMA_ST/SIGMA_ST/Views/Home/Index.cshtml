@@ -1,7 +1,25 @@
 ﻿
-@model IEnumerable<SIGMA_ST.Models.Gas>
+@model SIGMA_ST.Models.Gas
 @{
     ViewBag.Title = "Кассовый аппарат";
 }
+<form asp-action="Index" asp-controller="Home">
+    <div class="form-group">
+        <label asp-for="NameGas" class="control-label">Название бензина</label>
+        <input type="text" asp-for="NameGas" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Number" class="control-label">Количество</label>
+        <input type="number" asp-for="Number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Price" class="control-label">Цена</label>
+        <input type="number" step="any" asp-for="Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+</form>
+
 
 

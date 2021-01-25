@@ -25,6 +25,7 @@ namespace SIGMA_ST.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(Gas gas)
         {
+
             db.Gas.Add(gas);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");

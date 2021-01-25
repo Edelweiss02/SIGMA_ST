@@ -18,7 +18,6 @@ C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SI
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SIGMA_ST.TagHelpers.output.cache
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SIGMA_ST.RazorCoreGenerate.cache
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -75,3 +74,4 @@ C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\ru
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SIGMA_ST.csproj.CoreCompileInputs.cache
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SIGMA_ST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\Razor\Views\Home\History.cshtml.g.cs

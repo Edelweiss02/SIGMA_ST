@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SIGMA_ST.Models;
@@ -28,7 +27,7 @@ namespace SIGMA_ST.Controllers
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
-        public IActionResult Privacy()
+        public IActionResult History()
         {
             return View();
         }

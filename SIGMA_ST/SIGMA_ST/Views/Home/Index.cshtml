@@ -1,14 +1,7 @@
 ﻿
 @model IEnumerable<SIGMA_ST.Models.Gas>
 @{
-    ViewBag.Title = "Все пользователи";
+    ViewBag.Title = "Кассовый аппарат";
 }
-<a asp-action="Create">Добавить пользователя</a>
-<table class="table">
-    <tr><td>Имя</td><td>Возраст</td></tr>
-    @foreach (var item in Model)
-    {
-        <tr><td>@item.NameGas</td><td>@item.Price</td></tr>
-    }
-</table>
+
 

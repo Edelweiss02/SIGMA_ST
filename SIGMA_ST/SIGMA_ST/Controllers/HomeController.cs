@@ -2,6 +2,11 @@
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SIGMA_ST.Models;
+using System.Data;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Collections.Generic;
+
 
 namespace SIGMA_ST.Controllers
 {
@@ -12,18 +17,12 @@ namespace SIGMA_ST.Controllers
         {
             db = context;
         }
-       
-      // public async Task<IActionResult> Index()
-      // {
-       //     return View(await db.Gas.ToListAsync());
-      //  }
-       
-        public IActionResult Index()
-        {
+       [HttpGet]
+       public IActionResult Index()
+       {
             return View();
-        }
+       }
        
-    
         public IActionResult History()
         {
             return View();

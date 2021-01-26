@@ -1,14 +1,25 @@
-﻿
-@model SIGMA_ST.Models.Gas
+﻿@model SIGMA_ST.Models.Gas
 @{
     ViewBag.Title = "Кассовый аппарат";
 }
 
+<style>
+    #selNG {
+        width: 110px;
+    }
+</style>
 
-<div class="input-group">
-    <input type="text"  id="sum" hidden>  
-      <input type="checkbox" id="danger">
-</div>
+<table style="width:100%;">
+    <tr><td>Тип бензина:</td><td>Количество литров:</td><td>еуые3</td></tr>
+    <tr>
+        <td>
+            
+        </td>
+        <td><input id="inpNumL" type="number" asp-for="NameGas" class="form-control" placeholder="Объем топлива в заказе" /></td>
+        <td>test4</td>
+    </tr>
+    <tr><td>3301</td><td>2216</td><td>1052</td></tr>
+</table>
 
 
 

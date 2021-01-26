@@ -34,5 +34,19 @@ namespace SIGMA_ST.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult CreateDiscountCard()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateDiscountCard(DiscountCard ds)
+        {
+            ds.Bonuses = 0;
+            db.DiscountCard.Add(ds);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
     }
 }

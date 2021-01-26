@@ -22,7 +22,15 @@ namespace SIGMA_ST.Controllers
        {
             return View();
        }
-       
+       [HttpPost]
+       public async Task<IActionResult> Index(Gas g, DiscountCard d)
+        {
+            
+            db.Gas.Update(g);
+            db.DiscountCard.Add(d);
+            await db.SaveChangesAsync();
+            return RedirectToAction("History");
+        }
         public IActionResult History()
         {
             return View();

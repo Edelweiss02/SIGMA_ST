@@ -1,4 +1,4 @@
-﻿@model SIGMA_ST.Models.Gas
+﻿@model SIGMA_ST.ViewModels.IndexViewModel
 @{
     ViewBag.Title = "Кассовый аппарат";
 }
@@ -7,19 +7,22 @@
     #selNG {
         width: 110px;
     }
+
+    #inpNumL {
+        width: 230px;
+    }
 </style>
 
-<table style="width:100%;">
-    <tr><td>Тип бензина:</td><td>Количество литров:</td><td>еуые3</td></tr>
-    <tr>
-        <td>
-            
-        </td>
-        <td><input id="inpNumL" type="number" asp-for="NameGas" class="form-control" placeholder="Объем топлива в заказе" /></td>
-        <td>test4</td>
-    </tr>
-    <tr><td>3301</td><td>2216</td><td>1052</td></tr>
-</table>
 
+<form asp-action="Index" asp-controller="Home">
+    <input id="inpNumL" type="text" asp-for="Name" class="form-control" placeholder="name card" />
+    <input id="inpNumL" type="text" asp-for="Surname" class="form-control" placeholder="surname" />
+    <input id="inpNumL" type="number" asp-for="Bonuses" class="form-control" placeholder="bonuses" />
+    <input id="inpNumL" type="text" asp-for="NameGas" class="form-control" placeholder="name gas" />
+    <input id="inpNumL" type="number" min=0 asp-for="Number" step="0.1" class="form-control" placeholder="number" />
+    <input id="inpNumL" type="number" min=0 asp-for="Price" step="0.1" class="form-control" placeholder="price" />
+    <input id="inpNumL" type="number" min=0 asp-for="IDGas"  class="form-control" placeholder="idgas" />
+    <input id="Submit1" type="submit" value="SEND" />
+</form>
 
 

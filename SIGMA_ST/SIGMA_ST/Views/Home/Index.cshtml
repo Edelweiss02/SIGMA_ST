@@ -16,34 +16,71 @@
         border: 1px solid #1f497d; /* Параметры рамки */
         border-radius: 5px; /* Радиус скругления */
     }
+
     #select1 {
         position: relative;
-        margin: 10px 10px;
-        font-family:'Times New Roman', Times, serif;
-        font-size:large;
+        margin: 5px 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
     }
-    #in1{
+    #in2 {
+        position: relative;
+        margin: 0 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
+    }
+    #in1 {
         width: 125px;
+    }
+    #in4{
+        position:relative;
+        margin-left:410px;
+        margin-top: 20px;
+    }
+    #Submit1 {
+        position: relative;
+        margin: 5px 5px;
+        border-radius: 5px;
+        padding: 11px 18px;
+    }
+    #in3 {
+        position: relative;
+        margin-top: -200px;
     }
 </style>
 
 <form asp-controller="Home" asp-action="Index">
-    <fieldset style="border: solid; border-width: thin; height: 500px; width:500px; border-color: #808080">
+    <div id="in4">
+        <fieldset style="border: solid; border-width: thin; height: 184.5px; width:100px; border-color: #808080">
+            <input id="Submit1" type="submit" value="submit" disabled />
+            <input id="Submit1" type="submit" value="submit" disabled />
+            <input id="Submit1" type="submit" value="submit" disabled />
+        </fieldset>
+    </div>
+    <fieldset id="in3" style="border: solid; border-width: thin; height: 200px; width:400px; border-color: #808080">
         <legend visible="true" style="width:auto; margin-bottom: 0px; font-size: 12px; font-weight: bold; color: #1f497d;">Оформление заказа</legend>
         <div id="select1">
             <label asp-for="IDGas" class="control-label">Вид бензина:</label>
-            <p>
-                <select asp-for="IDGas">
-                    <option value="1">АИ-80</option>
-                    <option value="2">АИ-92</option>
-                    <option value="3">АИ-95</option>
-                    <option value="4">АИ-95+</option>
-                    <option value="5">АИ-98</option>
-                    <option value="6">АИ-100</option>
-                </select>
-            </p>
+            <select asp-for="IDGas">
+                <option value="1">АИ-80</option>
+                <option value="2">АИ-92</option>
+                <option value="3">АИ-95</option>
+                <option value="4">АИ-95+</option>
+                <option value="5">АИ-98</option>
+                <option value="6">АИ-100</option>
+            </select>
+        </div>
+        <div id="select1">
             <label class="control-label">Объем топлива:</label>
-            <input type="number" step="0.1" id="in1" class="form-control" placeholder="0.00 L" />
+            <input type="number" step="0.1" id="in1" min="0" class="form-control" placeholder="0.00 L" />
+        </div>
+        <div id="select1">
+            <input type="checkbox" id="danger" />
+            <label class="control-label">Есть дисконтная карта</label>
+        </div>
+        <div id="in2" hidden="hidden">
+            <label class="control-label">Номер дисконтной карты:</label>
+            <input type="number" min="0" id="in1" class="form-control" placeholder="Введите ID" />
         </div>
     </fieldset>
 </form>

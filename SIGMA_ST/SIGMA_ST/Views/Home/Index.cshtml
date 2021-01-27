@@ -4,25 +4,26 @@
 }
 
 <style>
-    #selNG {
-        width: 110px;
-    }
-
-    #inpNumL {
-        width: 230px;
-    }
+ #fg1{
+     position: absolute;
+     top: 100px;
+ }
+ #sel1{
+     width: 75px;
+ }
 </style>
 
-
-<form asp-action="Index" asp-controller="Home">
-    <input id="inpNumL" type="text" asp-for="Name" class="form-control" placeholder="name card" />
-    <input id="inpNumL" type="text" asp-for="Surname" class="form-control" placeholder="surname" />
-    <input id="inpNumL" type="number" asp-for="Bonuses" class="form-control" placeholder="bonuses" />
-    <input id="inpNumL" type="text" asp-for="NameGas" class="form-control" placeholder="name gas" />
-    <input id="inpNumL" type="number" min=0 asp-for="Number" step="0.1" class="form-control" placeholder="number" />
-    <input id="inpNumL" type="number" min=0 asp-for="Price" step="0.1" class="form-control" placeholder="price" />
-    <input id="inpNumL" type="number" min=0 asp-for="IDGas"  class="form-control" placeholder="idgas" />
-    <input id="Submit1" type="submit" value="SEND" />
+<form asp-controller="Home" asp-action="Index">
+    <div class="form-group" id="fg1">
+      <select id="sel1" asp-for="IDGas">
+          <option value="1" >АИ-80</option>
+          <option value="2" >АИ-92</option>
+          <option value="3" >АИ-95</option>
+          <option value="4" >АИ-95+</option>
+          <option value="5" >АИ-98</option>
+          <option value="6" >АИ-100</option>
+      </select>
+    </div>
 </form>
 
 

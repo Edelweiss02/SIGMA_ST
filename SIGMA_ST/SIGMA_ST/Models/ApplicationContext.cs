@@ -10,5 +10,6 @@ namespace SIGMA_ST.Models
 
         }
         public DbSet<DiscountCard> DiscountCard { get; set; }
+        public DbSet<Orders> Orders { get; set; }
 }
 }

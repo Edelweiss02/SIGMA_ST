@@ -1,4 +1,4 @@
-﻿@model SIGMA_ST.ViewModels.IndexViewModel
+﻿@model SIGMA_ST.Models.Orders
 @{
     ViewBag.Title = "Кассовый аппарат";
 }
@@ -38,10 +38,14 @@
         margin-top: 20px;
     }
     #Submit1 {
-        position: relative;
-        margin: 5px 5px;
+      
         border-radius: 5px;
-        padding: 11px 18px;
+        margin-left: 5px;
+        margin-top: 2px;
+        width: 90px;
+        height: 58px;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
     }
     #in3 {
         position: relative;
@@ -52,9 +56,9 @@
 <form asp-controller="Home" asp-action="Index">
     <div id="in4">
         <fieldset style="border: solid; border-width: thin; height: 184.5px; width:100px; border-color: #808080">
-            <input id="Submit1" type="submit" value="submit" disabled />
-            <input id="Submit1" type="submit" value="submit" disabled />
-            <input id="Submit1" type="submit" value="submit" disabled />
+            <input id="Submit1" type="submit" value="Оформить" disabled />
+            <input id="Submit1" type="submit" value="Тестовая" disabled />
+            <input title="Создание новой Discount Card" id="Submit1" type="button" onclick="location.href='@Url.Action("CreateDiscountCard", "Home")'" value="Создать"/>
         </fieldset>
     </div>
     <fieldset id="in3" style="border: solid; border-width: thin; height: 200px; width:400px; border-color: #808080">
@@ -72,7 +76,7 @@
         </div>
         <div id="select1">
             <label class="control-label">Объем топлива:</label>
-            <input type="number" step="0.1" id="in1" min="0" class="form-control" placeholder="0.00 L" />
+            <input asp-for="Liters" type="number" step="0.1" id="in1" min="0" class="form-control" placeholder="0.00 L" />
         </div>
         <div id="select1">
             <input type="checkbox" id="danger" />
@@ -80,7 +84,7 @@
         </div>
         <div id="in2" hidden="hidden">
             <label class="control-label">Номер дисконтной карты:</label>
-            <input type="number" min="0" id="in1" class="form-control" placeholder="Введите ID" />
+            <input  type="number" min="0" id="in1" class="form-control" placeholder="Введите ID" />
         </div>
     </fieldset>
 </form>

@@ -8,7 +8,7 @@ namespace SIGMA_ST.Models
 
         [Key]  public int IDGas { get; set; }
         public string NameGas { get; set; }
-        public double Number { get; set; }
-        public double Price { get; set; }
+        public float Number { get; set; }
+        public float Price { get; set; }
     }
 }

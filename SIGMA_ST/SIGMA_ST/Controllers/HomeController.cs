@@ -27,7 +27,7 @@ namespace SIGMA_ST.Controllers
        public async Task<IActionResult> Index(Orders o)
         {
             DateTime thisDay = DateTime.Today;
-            o.Date = thisDay;
+            o.Date = thisDay; 
             o.Cost = o.Gas.Price * o.Liters;
             db.DiscountCard.Add(o);
             await db.SaveChangesAsync();

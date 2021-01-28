@@ -145,6 +145,8 @@ C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\ru
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateDiscountCard.cshtml.g.cs
+C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SIGMA_ST.csproj.CoreCompileInputs.cache
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SIGMA_ST.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateDiscountCard.cshtml.g.cs

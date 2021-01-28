@@ -117,7 +117,8 @@ namespace SIGMA_ST.Controllers
             await db.SaveChangesAsync();
             inv.Date = thisday;
             inv.EventType = "Поставка";
-            inv.ChangeAmount = (v.newPrice * v.Number) * -1;
+            inv.ChangeAmount = ((v.newPrice * v.Number) * -1);
+            inv.ChangeAmount = Math.Round(inv.ChangeAmount, 2);
             inv.Amount = v.Number;
             inv.Idgas = id;
             db.Invoices.Add(inv);

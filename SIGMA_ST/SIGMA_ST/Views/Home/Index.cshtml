@@ -77,7 +77,7 @@
         <legend visible="true" style="width:auto; margin-bottom: 0px; font-size: 12px; font-weight: bold; color: #1f497d;">Оформление заказа</legend>
         <div id="select1">
             <label class="control-label">Вид бензина:</label>
-            <select asp-for="Price" id ="ui1">
+            <select asp-for="Price" id ="ui1" onchange="myFunction2(event)">
                 @foreach (var item in Model.Gases)
                 {
                 <option value="@item.Price">@item.NameGas | @item.Price ₴ | @item.Number L</option>

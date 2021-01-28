@@ -44,3 +44,9 @@ function myFunction(e) {
     cost99.value = price99.value
 }
 
+function myFunction2(e) {
+    var liters = document.getElementById('in1')
+    var cost = document.getElementById('test3301')
+    var price = document.getElementById('ui1')
+    cost.value = (liters.value * price.value).toFixed(2)
+}

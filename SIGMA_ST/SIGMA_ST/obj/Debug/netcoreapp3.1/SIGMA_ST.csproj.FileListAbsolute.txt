@@ -104,7 +104,6 @@ C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SI
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SIGMA_ST.pdb
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\SIGMA_ST.exe
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\SIGMA_ST.deps.json
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\bin\Debug\netcoreapp3.1\SIGMA_ST.runtimeconfig.json
@@ -160,3 +159,4 @@ C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SI
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\staticwebassets\SIGMA_ST.StaticWebAssets.Manifest.cache
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\staticwebassets\SIGMA_ST.StaticWebAssets.xml
 C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\SIGMA_ST.genruntimeconfig.cache
+C:\Users\Edelweiss\Desktop\SIGMA_ST\SIGMA_ST\SIGMA_ST\obj\Debug\netcoreapp3.1\scopedcss\bundle\SIGMA_ST.styles.css

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "umLEZUo/8YyheJP/Qqah12HPZp1/CHk0XrDV0n4UztBq7V4SQmSBWCYOrFfzLYeOeJIOlhffZ3Q4bpStcQ3N9A==",
+  "dgSpecHash": "8zX9qnIUeUw6Yau2TB4qTQEkOnzSwF9zV1237qH6Q+/vxB5JzHYZOenG5PtczaCjEuiAVkOBnuLv64ByXiY28g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Edelweiss\\Desktop\\newSIGMA\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST.csproj",
+  "projectFilePath": "C:\\Users\\Edelweiss\\Desktop\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edelweiss\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Edelweiss\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

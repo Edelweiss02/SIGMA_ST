@@ -5804,11 +5804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edelweiss\\Desktop\\newSIGMA\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST.csproj",
+      "projectUniqueName": "C:\\Users\\Edelweiss\\Desktop\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST.csproj",
       "projectName": "SIGMA_ST",
-      "projectPath": "C:\\Users\\Edelweiss\\Desktop\\newSIGMA\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST.csproj",
+      "projectPath": "C:\\Users\\Edelweiss\\Desktop\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST.csproj",
       "packagesPath": "C:\\Users\\Edelweiss\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edelweiss\\Desktop\\newSIGMA\\SIGMA_ST\\SIGMA_ST\\obj\\",
+      "outputPath": "C:\\Users\\Edelweiss\\Desktop\\SIGMA_ST\\SIGMA_ST\\SIGMA_ST\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Edelweiss\\AppData\\Roaming\\NuGet\\NuGet.Config",

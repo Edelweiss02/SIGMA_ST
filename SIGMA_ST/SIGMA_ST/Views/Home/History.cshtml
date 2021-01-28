@@ -17,37 +17,37 @@
         <tr><td>Дата</td><td>Тип изменения</td><td>Тип бензина</td><td>Стоимость за литр</td><td>Объем литров</td><td>Стоимость</td></tr>
         <tr>
             <td>
-                @foreach (var item in Model.Invoices)
+                @foreach (var item in Model.Invoices.Reverse())
                 {
-                    <p> @item.Date</p>
+                    <p> @item.Date.ToString("d")</p>
                 }
             </td>
             <td>
-                @foreach (var item in Model.Invoices)
+                @foreach (var item in Model.Invoices.Reverse())
                 {
                     <p> @item.EventType</p>
                 }
             </td>
             <td>
-                @foreach (var item in Model.Invoices)
+                @foreach (var item in Model.Invoices.Reverse())
                 {
                     <p>@item.IdgasNavigation.NameGas</p>
                 }
             </td>
             <td>
-                @foreach (var item in Model.Invoices)
+                @foreach (var item in Model.Invoices.Reverse())
                 {
                 <p>@item.IdgasNavigation.Price ₴</p>
                 }
             </td>
             <td>
-                @foreach (var item in Model.Invoices)
+                @foreach (var item in Model.Invoices.Reverse())
                 {
                     <p> @item.Amount L</p>
                 }
             </td>
             <td>
-                @foreach (var item in Model.Invoices)
+                @foreach (var item in Model.Invoices.Reverse())
                 {
                     <p> @item.ChangeAmount ₴</p>
                 }

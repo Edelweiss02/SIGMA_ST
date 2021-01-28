@@ -1,0 +1,77 @@
+﻿@model ViewModel3
+
+@{
+    ViewData["Title"] = "Пополнение запасов";
+}
+
+<style>
+    legend {
+        background: #ffffff; /* Цвет фона */
+        padding: 5px 10px; /* Поля */
+        border: 2px solid #220e5b; /* Параметры рамки */
+        margin-left: 20px; /* Отступ слева */
+        border-radius: 5px; /* Радиус скругления */
+    }
+
+    fieldset {
+        border: 1px solid #1f497d; /* Параметры рамки */
+        border-radius: 5px; /* Радиус скругления */
+    }
+
+    #select1 {
+        position: relative;
+        margin: 10px 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
+    }
+
+    #inpNameDC {
+        width: 250px;
+    }
+
+    #inpSurnameDC {
+        width: 250px;
+    }
+
+    #btDC {
+        border-radius: 10px;
+    }
+    #ui99 {
+        font-size: small;
+    }
+    #in99 {
+        width: 125px;
+    }
+    #in98 {
+        width: 125px;
+    }
+</style>
+
+<form id="qw" asp-action="CreateInvoice" asp-controller="Home">
+    <fieldset style="border: solid; border-width: thin; height: 320px; width:375px; border-color: #808080">
+        <legend visible="true" style="width:auto; margin-bottom: 0px; font-size: 12px; font-weight: bold; color: #1f497d;">Поставка топлива на АЗС</legend>
+        <div id="select1">
+            <div class="form-group">
+                <label class="control-label">Вид бензина:</label>
+                <select asp-for="Price" id="ui99" onchange="myFunction(event)">
+                    <option selected="selected">Выбрать вид бензина</option>
+                    @foreach (var item in Model.Gases)
+                    {
+                        <option value="@item.Price">@item.NameGas | Осталось: @item.Number L</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Объем топлива:</label>
+                <input asp-for="Number" type="number" step="0.1" id="in99" min="0" class="form-control" placeholder="0.00 L" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Стоимость за литр:</label>
+                <input asp-for="newPrice" type="number" step="0.01" id="in98" min="0" class="form-control"  />
+            </div>
+            <div class="form-group">
+                <input id="btDC" type="submit" value="Пополнить" />
+            </div>
+        </div>
+    </fieldset>
+</form>

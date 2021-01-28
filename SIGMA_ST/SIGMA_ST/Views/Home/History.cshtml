@@ -1,6 +1,59 @@
-﻿@{
-    ViewData["Title"] = "Рабочая зона";
+﻿@model ViewModel2
+
+@{
+    ViewData["Title"] = "История";
 }
-<h1>@ViewData["Title"]</h1>
+
+<style>
+    #st1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        text-align: center;
+    }
+</style>
+
+<div id="st1">
+    <table border="1" style="width:100%;">
+        <tr><td>Дата</td><td>Тип изменения</td><td>Тип бензина</td><td>Стоимость за литр</td><td>Объем литров</td><td>Стоимость</td></tr>
+        <tr>
+            <td>
+                @foreach (var item in Model.Invoices)
+                {
+                    <p> @item.Date</p>
+                }
+            </td>
+            <td>
+                @foreach (var item in Model.Invoices)
+                {
+                    <p> @item.EventType</p>
+                }
+            </td>
+            <td>
+                @foreach (var item in Model.Invoices)
+                {
+                    <p>@item.IdgasNavigation.NameGas</p>
+                }
+            </td>
+            <td>
+                @foreach (var item in Model.Invoices)
+                {
+                <p>@item.IdgasNavigation.Price ₴</p>
+                }
+            </td>
+            <td>
+                @foreach (var item in Model.Invoices)
+                {
+                    <p> @item.Amount L</p>
+                }
+            </td>
+            <td>
+                @foreach (var item in Model.Invoices)
+                {
+                    <p> @item.ChangeAmount ₴</p>
+                }
+            </td>
+        </tr>
+</table>
+</div>
 
 

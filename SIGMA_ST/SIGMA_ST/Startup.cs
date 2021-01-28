@@ -20,7 +20,7 @@ namespace SIGMA_ST
         public void ConfigureServices(IServiceCollection services)
         {
             string connection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<ApplicationContext>(options =>
+            services.AddDbContext<GasStationContext>(options =>
                 options.UseSqlServer(connection));
             services.AddControllersWithViews();
         }

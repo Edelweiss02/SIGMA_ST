@@ -1,8 +1,10 @@
-﻿@model SIGMA_ST.Models.Orders
+﻿@model ViewModel
 @{
     ViewBag.Title = "Кассовый аппарат";
 }
-
+@{ 
+    
+}
 <style>
     legend {
         background: #ffffff; /* Цвет фона */
@@ -23,22 +25,29 @@
         font-family: 'Times New Roman', Times, serif;
         font-size: large;
     }
+
     #in2 {
         position: relative;
         margin: 0 10px;
         font-family: 'Times New Roman', Times, serif;
         font-size: large;
     }
+
     #in1 {
         width: 125px;
     }
-    #in4{
-        position:relative;
-        margin-left:410px;
+    #in5 {
+        width: 125px;
+    }
+    #in4 {
+        position: relative;
+        margin-left: 410px;
         margin-top: 20px;
     }
+    #test3301 {
+        width: 125px;
+    }
     #Submit1 {
-      
         border-radius: 5px;
         margin-left: 5px;
         margin-top: 2px;
@@ -51,31 +60,32 @@
         position: relative;
         margin-top: -200px;
     }
+    #ui1{
+        font-size:small;
+    }
 </style>
 
 <form asp-controller="Home" asp-action="Index">
     <div id="in4">
         <fieldset style="border: solid; border-width: thin; height: 184.5px; width:100px; border-color: #808080">
-            <input id="Submit1" type="submit" value="Оформить" disabled />
-            <input id="Submit1" type="submit" value="Тестовая" disabled />
-            <input title="Создание новой Discount Card" id="Submit1" type="button" onclick="location.href='@Url.Action("CreateDiscountCard", "Home")'" value="Создать"/>
+            <input id="Submit1" type="submit" value="Оформить" title="Оформить заказ" />
+            <input id="Submit1" type="button" value="Пополнить" onclick="location.href='@Url.Action("CreateInvoice", "Home")'" title="Пополнение запасов бензина"/>
+            <input title="Создание новой Discount Card" id="Submit1" type="button" onclick="location.href='@Url.Action("CreateDiscountCard", "Home")'" value="Создать" />
         </fieldset>
     </div>
     <fieldset id="in3" style="border: solid; border-width: thin; height: 200px; width:400px; border-color: #808080">
         <legend visible="true" style="width:auto; margin-bottom: 0px; font-size: 12px; font-weight: bold; color: #1f497d;">Оформление заказа</legend>
         <div id="select1">
-            <label asp-for="IDGas" class="control-label">Вид бензина:</label>
-            <select asp-for="IDGas">
-                <option value="1">АИ-80</option>
-                <option value="2">АИ-92</option>
-                <option value="3">АИ-95</option>
-                <option value="4">АИ-95+</option>
-                <option value="5">АИ-98</option>
-                <option value="6">АИ-100</option>
+            <label class="control-label">Вид бензина:</label>
+            <select asp-for="Price" id ="ui1">
+                @foreach (var item in Model.Gases)
+                {
+                <option value="@item.Price">@item.NameGas | @item.Price ₴ | @item.Number L</option>
+                }
             </select>
         </div>
         <div id="select1">
-            <label class="control-label">Объем топлива:</label>
+            <label id="test1" class="control-label">Объем топлива:</label>
             <input asp-for="Liters" type="number" step="0.1" id="in1" min="0" class="form-control" placeholder="0.00 L" />
         </div>
         <div id="select1">
@@ -84,9 +94,24 @@
         </div>
         <div id="in2" hidden="hidden">
             <label class="control-label">Номер дисконтной карты:</label>
-            <input  type="number" min="0" id="in1" class="form-control" placeholder="Введите ID" />
+            <input asp-for="Idcard" type="number" min="0" id="in5" class="form-control" placeholder="Введите ID" />
+            <input asp-for="bon" type="checkbox" id="danger12" />
+            <label class="control-label">Использовать бонусные накопления</label>
         </div>
     </fieldset>
+    <hr width="400" align="left" />
+    <div id="select1">
+        <label class="control-label">Общая стоимость:</label>
+        <input asp-for="Cost"  id="test3301" type="number" readonly />
+    </div>
+    <select id="ui2" hidden>
+        <option value="0" selected ="selected"></option>
+        @foreach(var tm in Model.DiscountCards)
+        {
+            <option id="@tm.Idcard" value="@tm.Bonuses">@tm.Name</option>
+        }
+    </select>
 </form>
+
 
 

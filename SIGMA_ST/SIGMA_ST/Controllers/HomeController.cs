@@ -121,7 +121,7 @@ namespace SIGMA_ST.Controllers
             inv.ChangeAmount = Math.Round(inv.ChangeAmount, 2);
             inv.Amount = v.Number;
             inv.Idgas = id;
-            db.Invoices.Add(inv);
+            db.Invoices.Add(inv); 
             await db.SaveChangesAsync();
             return RedirectToAction("History");
         }
